@@ -1076,7 +1076,7 @@
       <div class="socials reveal">
         <a href="https://github.com/Sainath-Gawas" target="_blank" rel="noopener" class="social-link clickable" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/sainath-gawas-01093b318" class="social-link clickable" id="linkedinSocial" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="gawassainath1@gmail.com" class="social-link clickable" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        <a href="mailto:gawassainath1@gmail.com" class="social-link clickable" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
       </div>
     </div>
     <div class="footer">
@@ -1376,7 +1376,6 @@
        Footer year + placeholder wiring
     ========================================================= */
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Prevent navigation for placeholder LinkedIn link until a real URL is set
     ['linkedinSocialHero','linkedinSocial'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.addEventListener('click', (e) => { if (LINKEDIN_URL === '#') e.preventDefault(); });

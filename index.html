@@ -1065,7 +1065,6 @@
         <span class="section-label" style="justify-content:center;">Contact</span>
         <h2 class="contact-cta">Let's build something<br><span class="accent">worth shipping</span></h2>
         <p class="contact-text">
-          Whether it's a project, an idea, or just a hello - my inbox is always open.
           Let's turn the next idea into reality.
         </p>
       </div>
@@ -1265,7 +1264,7 @@
       const grid = document.getElementById('projectsGrid');
 
       // Skeleton placeholders
-      function renderSkeletons(n = 4) {
+      function renderSkeletons(n = 5) {
         grid.innerHTML = '';
         for (let i = 0; i < n; i++) {
           const sk = document.createElement('div');
@@ -1313,7 +1312,7 @@
         const top = repos
           .filter(r => !r.fork)
           .sort((a, b) => b.stargazers_count - a.stargazers_count)
-          .slice(0, 4);
+          .slice(0, 5);
 
         if (top.length === 0) {
           grid.innerHTML = `<p style="color:var(--text-muted);grid-column:1/-1;text-align:center;padding:3rem 0;">No public repositories found yet. Check back soon.</p>`;
